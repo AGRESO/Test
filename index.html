@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Computadoras Gamer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Estilo para el cuerpo de la página */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('fondo_pc_gamer.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para el encabezado */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Estilo para el título */
+        h1 {
+            font-size: 36px;
+        }
+
+        /* Estilo para el menú de navegación */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Estilo para los enlaces de navegación */
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        /* Estilo para el contenido principal */
+        .contenido {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Estilo para los productos */
+        .producto {
+            border: 1px solid #ddd;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin: 20px;
+            width: calc(33.33% - 40px); /* Asegura que haya 3 productos por fila en desktop */
+            box-sizing: border-box;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo para el pie de página */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Estilo para la respuesta móvil */
+        @media screen and (max-width: 768px) {
+            .producto {
+                width: calc(50% - 40px); /* Asegura que haya 2 productos por fila en dispositivos más pequeños */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Computadoras Gamer</h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <div class="contenido">
+        <div class="producto">
+            <h2>Computadora Gamer 1</h2>
+            <p>Descripción del producto...</p>
+            <p>Precio: $1,000</p>
+            <a href="#">Comprar</a>
+        </div>
+
+        <div class="producto">
+            <h2>Computadora Gamer 2</h2>
+            <p>Descripción del producto...</p>
+            <p>Precio: $1,200</p>
+            <a href="#">Comprar</a>
+        </div>
+
+        <div class="producto">
+            <h2>Computadora Gamer 3</h2>
+            <p>Descripción del producto...</p>
+            <p>Precio: $1,500</p>
+            <a href="#">Comprar</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Tienda de Computadoras Gamer
+    </footer>
+</body>
+</html>
